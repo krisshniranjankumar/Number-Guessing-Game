@@ -2,7 +2,7 @@ import tkinter as kinder
 
 import random
 
-window = kinder.Tk() #creates a window
+window = kinder.Tk() 
 
 window.title("Number Game")
 
