@@ -13,6 +13,7 @@ This is an interactive number guessing game where the computer generates a rando
 - Hint system (Too High / Too Low)
 - Attempt counter
 - User input validation (only allows integers)
+- An 'end' button to terminate the game
 
 ##  How to Run
 
