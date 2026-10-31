@@ -1,12 +1,12 @@
 import tkinter as kinder
 
-import random
+import random 
 
-window = kinder.Tk() 
+window = kinder.Tk() #Creates a window
 
-window.title("Number Game")
+window.title("Number Game") #Sets a title to the window
 
-frame = kinder.Frame(window)
+frame = kinder.Frame(window) 
 frame.pack(pady=75)
 window.iconbitmap("game_icon.ico")
 
@@ -22,7 +22,7 @@ center_x = int(screen_width/2 - window_width/2)
 
 center_y = int(screen_height/2 - window_height/2)
 
-window.geometry("{}x{}+{}+{}".format(window_width, window_height, center_x, center_y))
+window.geometry("{}x{}+{}+{}".format(window_width, window_height, center_x, center_y)) #Calculations done inorder to keep the game window in the center of the screen
 
 kinder.Label(frame, text="Guess the number (range is 1 to 100): ", font=("Arial",14,"italic")).pack(pady=5)
 
