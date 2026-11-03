@@ -48,14 +48,14 @@ def game(event):
             new_frame = kinder.Frame(window)
             new_frame.pack(pady=75)
             kinder.Label(new_frame, text="Victory!", font=("Arial", 20,"bold")).pack()
-            kinder.Label(new_frame, text="(you won with {} tries)".format(count), font=("Arial", 12,"italic")).pack()
+            kinder.Label(new_frame, text="(You won with {} tries)".format(count), font=("Arial", 12,"italic")).pack()
             def end():
                 window.destroy()
             kinder.Button(new_frame, text="End", command=end, font=("Arial",11)).pack(pady=5)
     except ValueError:
         count -= 1
         num_entry.delete(0, kinder.END)
-        display.config(text="Please enter a number.")
+        display.config(text="Please enter a valid number.")
 
 
             
