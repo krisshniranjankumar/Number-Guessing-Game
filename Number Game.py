@@ -26,9 +26,9 @@ window.geometry("{}x{}+{}+{}".format(window_width, window_height, center_x, cent
 
 kinder.Label(frame, text="Guess the number (range is 1 to 100): ", font=("Arial",14,"italic")).pack(pady=5)
 
-num = random.randint(1,100)
+num = random.randint(1,100) #generates a random number 
 
-count = 0
+count = 0 #initiallizing a variable to keep track of the amount of tries the user took
 
 def game(event):
     global count
